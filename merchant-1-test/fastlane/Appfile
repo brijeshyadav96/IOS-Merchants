@@ -6,3 +6,6 @@ team_id("BU58X4KWFY") # Developer Portal Team ID
 
 # For more information about the Appfile, see:
 #     https://docs.fastlane.tools/advanced/#appfile
+
+
+ENV["FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD"] = "uvcm-shbt-fzkb-xkjx"
