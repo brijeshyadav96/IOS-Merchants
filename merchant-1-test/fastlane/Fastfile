@@ -23,6 +23,7 @@ platform :ios do
     upload_to_app_store(skip_metadata: true, skip_screenshots: true)
   end
 
+
   desc "To build our app"
   lane :build_app do
     gym(
@@ -31,5 +32,18 @@ platform :ios do
       clean: true,
       export_xcargs: "-allowProvisioningUpdates",
       output_name: "M1.ipa"
+    )
+  end
+
+  desc "To deliver the app to store"
+  lane :upload_to_app_store do
+    deliver(
+      ipa: "M1.ipa",
+      skip_screenshots: true,
+      skip_metadata: true,
+      skip_app_version_update: true,
+      force: true
+    )
+  end
 
 end
