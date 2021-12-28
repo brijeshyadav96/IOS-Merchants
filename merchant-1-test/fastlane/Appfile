@@ -1,0 +1,8 @@
+app_identifier("com.springbig.merchant-1-test") # The bundle identifier of your app
+apple_id("byadav@springbig.com") # Your Apple email address
+
+itc_team_id("121039516") # App Store Connect Team ID
+team_id("BU58X4KWFY") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
