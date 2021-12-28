@@ -30,6 +30,6 @@ platform :ios do
       scheme: "merchant-1-test",
       clean: true,
       export_xcargs: "-allowProvisioningUpdates",
-      output_name: "App.ipa"
+      output_name: "M1.ipa"
 
 end
