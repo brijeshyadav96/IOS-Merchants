@@ -30,6 +30,12 @@ platform :ios do
       project: "merchant-1-test.xcodeproj",
       scheme: "merchant-1-test",
       clean: true,
+      export_method: "app-store",
+      export_options: {
+      provisioningProfiles: { 
+        "com.springbig.merchant-1-test" => "merchant-1-test"
+        }
+      }
       export_xcargs: "-allowProvisioningUpdates",
       output_name: "M1.ipa"
     )
