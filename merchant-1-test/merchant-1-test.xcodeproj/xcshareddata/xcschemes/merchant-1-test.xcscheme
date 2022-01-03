@@ -20,6 +20,34 @@
                ReferencedContainer = "container:merchant-1-test.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A964172E277030F200A47CC9"
+               BuildableName = "merchant-1-testTests.xctest"
+               BlueprintName = "merchant-1-testTests"
+               ReferencedContainer = "container:merchant-1-test.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A9641738277030F200A47CC9"
+               BuildableName = "merchant-1-testUITests.xctest"
+               BlueprintName = "merchant-1-testUITests"
+               ReferencedContainer = "container:merchant-1-test.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
