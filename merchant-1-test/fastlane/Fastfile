@@ -31,8 +31,8 @@ platform :ios do
       project: "merchant-1-test.xcodeproj",
       scheme: "merchant-1-test",
       clean: true,
-      get_certificates,
-      get_provisioning_profile,
+      cert(force: true)
+      sigh(force: true)
       export_xcargs: "-allowProvisioningUpdates",
       output_name: "M1.ipa"
     )
