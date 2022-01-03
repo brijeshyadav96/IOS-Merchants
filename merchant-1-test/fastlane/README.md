@@ -31,10 +31,10 @@ Push a new release build to the App Store
 
 To build our app
 
-### ios upload_app
+### ios upload_to_app_store
 
 ```sh
-[bundle exec] fastlane ios upload_app
+[bundle exec] fastlane ios upload_to_app_store
 ```
 
 To deliver the app to store
