@@ -17,7 +17,7 @@ default_platform(:ios)
 
 platform :ios do
   desc "Push a new release build to the App Store"
-  lane :release do
+  lane :release_app do
     increment_build_number(xcodeproj: "merchant-1-test.xcodeproj")
     ensure_xcode_version(version: "13.1")
     build_app(scheme: "merchant-1-test")
@@ -31,6 +31,8 @@ platform :ios do
       project: "merchant-1-test.xcodeproj",
       scheme: "merchant-1-test",
       clean: true,
+      get_certificates
+      get_provisioning_profile
       export_xcargs: "-allowProvisioningUpdates",
       output_name: "M1.ipa"
     )
