@@ -19,7 +19,6 @@ platform :ios do
   desc "Push a new release build to the App Store"
   lane :release do
     increment_build_number(xcodeproj: "merchant-1-test.xcodeproj")
-    ensure_xcode_version(version: "13.0")
     build_app(scheme: "merchant-1-test")
     upload_to_app_store(skip_metadata: true, skip_screenshots: true)
   end
@@ -32,8 +31,7 @@ platform :ios do
       scheme: "merchant-1-test",
       clean: true,
       export_xcargs: "-allowProvisioningUpdates",
-      output_name: "M1.ipa",
-      output_directory: "merchant-1-test"
+      output_name: "M1.ipa"
     )
   end
 
