@@ -20,6 +20,8 @@ platform :ios do
   lane :release_app do
     increment_build_number(xcodeproj: "merchant-1-test.xcodeproj")
     ensure_xcode_version(version: "13.1")
+    cert(force: true)
+    sigh(force: true)
     build_app(scheme: "merchant-1-test")
     upload_to_app_store(skip_metadata: true, skip_screenshots: true)
   end
@@ -31,8 +33,6 @@ platform :ios do
       project: "merchant-1-test.xcodeproj",
       scheme: "merchant-1-test",
       clean: true,
-      cert(force: true)
-      sigh(force: true)
       export_xcargs: "-allowProvisioningUpdates",
       output_name: "M1.ipa"
     )
