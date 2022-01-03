@@ -32,8 +32,7 @@ platform :ios do
       scheme: "merchant-1-test",
       clean: true,
       export_xcargs: "-allowProvisioningUpdates",
-      output_name: "M1.ipa",
-      output_directory: "merchant-1-test"
+      output_name: "M1.ipa"
     )
   end
 
