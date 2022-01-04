@@ -39,6 +39,14 @@ To build our app
 
 To deliver the app to store
 
+### ios beta
+
+```sh
+[bundle exec] fastlane ios beta
+```
+
+certs and profiles
+
 ----
 
 This README.md is auto-generated and will be re-generated every time [_fastlane_](https://fastlane.tools) is run.
