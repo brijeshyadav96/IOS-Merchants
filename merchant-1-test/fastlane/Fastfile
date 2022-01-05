@@ -49,8 +49,4 @@ platform :ios do
     )
   end
 
-  desc "certs and profiles"
-  lane :beta do
-    match(type: 'appstore')
-  end
 end
